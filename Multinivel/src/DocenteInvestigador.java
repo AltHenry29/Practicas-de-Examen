@@ -1,10 +1,7 @@
 public class DocenteInvestigador extends Docente {
-
     private int publicaciones;
 
-    // Constructor
-    public DocenteInvestigador(String codigo, String nombre, int edad,
-                               int horasClase, double valorHora, int publicaciones) {
+    public DocenteInvestigador(String codigo, String nombre, int edad, int horasClase, double valorHora, int publicaciones) {
         super(codigo, nombre, edad, horasClase, valorHora);
         setPublicaciones(publicaciones);
     }
@@ -17,28 +14,25 @@ public class DocenteInvestigador extends Docente {
         }
     }
 
-    // Sobrescritura de método
     @Override
-    public double calcularPago() {
+    public double calcularPago(){
         double pagoBase = super.calcularPago();
         double bono = publicaciones * 20;
         return pagoBase + bono;
     }
 
-    // Método sobrecargado
-    public double calcularPago(double bonoExtra) {
+    public double calcularPago(double bonoExtra){
         return calcularPago() + bonoExtra;
     }
 
-    // Sobrescritura
     @Override
-    public void describirRol() {
+    public void describirRol(){
         System.out.println("Rol: Docente investigador con producción académica.");
     }
 
-    // Mostrar datos adicionales
+    // Mostrar datos
     @Override
-    public void mostrarDatos() {
+    public void mostrarDatos(){
         super.mostrarDatos();
         System.out.println("Horas de clase: " + horasClase);
         System.out.println("Valor por hora: " + valorHora);

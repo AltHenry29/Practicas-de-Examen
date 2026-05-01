@@ -22,18 +22,17 @@ public class Main {
         System.out.print("Publicaciones: ");
         int publicaciones = sc.nextInt();
 
-        PersonaAcademica docente = new DocenteInvestigador(
-                codigo, nombre, edad, horas, valorHora, publicaciones);
+        PersonaAcademica docente = new DocenteInvestigador(codigo, nombre, edad, horas, valorHora, publicaciones);
 
         // Mostrar datos
         docente.mostrarDatos();
         docente.describirRol();
 
-        // Cálculo de pago
+        // Cálculo
         double pago = docente.calcularPago();
         System.out.println("Pago final: $" + pago);
 
-        // Cálculo con bono extra
+        // Cálculo de bono extra
         double pagoConBono = ((DocenteInvestigador) docente).calcularPago(50);
         System.out.println("Pago con bono extra: $" + pagoConBono);
     }

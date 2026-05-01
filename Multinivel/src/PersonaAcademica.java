@@ -1,17 +1,15 @@
 public class PersonaAcademica {
-    // Atributos privados
     private String codigo;
     private String nombre;
     private int edad;
 
-    // Constructor
     public PersonaAcademica(String codigo, String nombre, int edad) {
         this.codigo = codigo;
         this.nombre = nombre;
         setEdad(edad);
     }
 
-    // Setters con validación
+    // Setters
     public void setEdad(int edad) {
         if (edad >= 18) {
             this.edad = edad;
@@ -21,30 +19,29 @@ public class PersonaAcademica {
     }
 
     // Getters
-    public int getEdad() {
+    public int getEdad(){
         return edad;
     }
 
-    public String getCodigo() {
+    public String getCodigo(){
         return codigo;
     }
 
-    public String getNombre() {
+    public String getNombre(){
         return nombre;
     }
 
     // Métodos
-    public void mostrarDatos() {
+    public void mostrarDatos(){
         System.out.println("Código: " + codigo);
         System.out.println("Nombre: " + nombre);
         System.out.println("Edad: " + edad);
     }
 
-    public void describirRol() {
+    public void describirRol(){
         System.out.println("Rol: Persona académica general.");
     }
 
-    // Método que se sobrescribirá
     public double calcularPago() {
         return 0;
     }

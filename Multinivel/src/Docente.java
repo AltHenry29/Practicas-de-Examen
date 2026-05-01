@@ -2,15 +2,14 @@ public class Docente extends PersonaAcademica {
     protected int horasClase;
     protected double valorHora;
 
-    // Constructor
-    public Docente(String codigo, String nombre, int edad, int horasClase, double valorHora) {
+    public Docente(String codigo, String nombre, int edad, int horasClase, double valorHora){
         super(codigo, nombre, edad);
         setHorasClase(horasClase);
         setValorHora(valorHora);
     }
 
-    // Setters con validación
-    public void setHorasClase(int horasClase) {
+    // Setters
+    public void setHorasClase(int horasClase){
         if (horasClase >= 1 && horasClase <= 40) {
             this.horasClase = horasClase;
         } else {
@@ -26,18 +25,17 @@ public class Docente extends PersonaAcademica {
         }
     }
 
-    // Getter requerido
+    // Getters
     public int getHorasClase() {
         return horasClase;
     }
 
-    // Método sobrescrito
+    //Metodos
     @Override
     public double calcularPago() {
         return horasClase * valorHora;
     }
 
-    // Método sobrescrito
     @Override
     public void describirRol() {
         System.out.println("Rol: Docente de educación superior.");
