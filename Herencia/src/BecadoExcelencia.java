@@ -11,7 +11,7 @@ public class BecadoExcelencia extends EstudianteBecado {
         if (bono >= 0) {
             this.bonoExcelencia = bono;
         } else {
-            System.out.println("❌ El bono no puede ser negativo.");
+            System.out.println("El bono no puede ser negativo.");
         }
     }
 
@@ -19,6 +19,6 @@ public class BecadoExcelencia extends EstudianteBecado {
     public double calcularPagoFinal() {
         double pagoBase = super.calcularPagoFinal();
         double pagoFinal = pagoBase - bonoExcelencia;
-        return Math.max(pagoFinal, 0); // No permitir valores negativos
+        return Math.max(pagoFinal, 0); // No permite negativos
     }
 }

@@ -1,17 +1,16 @@
 public class EstudianteBecado extends Estudiante {
     private double porcentajeBeca; // 0 a 100
 
-    public EstudianteBecado(String codigo, String nombre, double promedio,
-                            double valorMatricula, double porcentajeBeca) {
+    public EstudianteBecado(String codigo, String nombre, double promedio, double valorMatricula, double porcentajeBeca){
         super(codigo, nombre, promedio, valorMatricula);
         setPorcentajeBeca(porcentajeBeca);
     }
 
-    public void setPorcentajeBeca(double porcentajeBeca) {
+    public void setPorcentajeBeca(double porcentajeBeca){
         if (porcentajeBeca >= 0 && porcentajeBeca <= 100) {
             this.porcentajeBeca = porcentajeBeca;
-        } else {
-            System.out.println("❌ Porcentaje de beca inválido (0-100).");
+        }else{
+            System.out.println("Porcentaje de beca inválido (0-100).");
         }
     }
 

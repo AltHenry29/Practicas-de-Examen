@@ -26,11 +26,10 @@ public class Main {
         System.out.print("Recargo pendiente: ");
         double recargo = sc.nextDouble();
 
-        // === POLIMORFISMO ===
         Estudiante e1 = new BecadoExcelencia(codigo, nombre, promedio, valorMatricula, beca, 50);
         Estudiante e2 = new RegularConRecargo(codigo, nombre, promedio, valorMatricula, materias, recargo);
 
-        // Mostrar resultados
+        // Resultados
         System.out.println("\n==== ESTUDIANTE BECA EXCELENCIA ====");
         e1.mostrarDatos();
         System.out.println("Pago final: $" + e1.calcularPagoFinal());

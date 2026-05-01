@@ -4,7 +4,6 @@ public class Estudiante {
     private double promedio;
     private double valorMatricula;
 
-    // Constructor
     public Estudiante(String codigo, String nombre, double promedio, double valorMatricula) {
         setCodigo(codigo);
         setNombre(nombre);
@@ -12,7 +11,7 @@ public class Estudiante {
         setValorMatricula(valorMatricula);
     }
 
-    // Setters con validación
+    // Setters
     public void setCodigo(String codigo) {
         if (codigo != null && !codigo.trim().isEmpty()) {
             this.codigo = codigo;
