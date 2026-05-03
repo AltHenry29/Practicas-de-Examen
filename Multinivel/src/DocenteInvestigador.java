@@ -10,7 +10,7 @@ public class DocenteInvestigador extends Docente {
         if (publicaciones >= 0) {
             this.publicaciones = publicaciones;
         } else {
-            System.out.println("❌ Publicaciones no pueden ser negativas.");
+            System.out.println("Publicaciones no pueden ser negativas.");
         }
     }
 

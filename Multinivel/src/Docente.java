@@ -13,7 +13,7 @@ public class Docente extends PersonaAcademica {
         if (horasClase >= 1 && horasClase <= 40) {
             this.horasClase = horasClase;
         } else {
-            System.out.println("❌ Horas de clase inválidas (1-40).");
+            System.out.println("Horas de clase inválidas (1-40).");
         }
     }
 
@@ -21,7 +21,7 @@ public class Docente extends PersonaAcademica {
         if (valorHora > 0) {
             this.valorHora = valorHora;
         } else {
-            System.out.println("❌ El valor por hora debe ser mayor a 0.");
+            System.out.println("El valor por hora debe ser mayor a 0.");
         }
     }
 

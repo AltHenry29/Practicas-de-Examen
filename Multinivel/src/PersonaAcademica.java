@@ -14,7 +14,7 @@ public class PersonaAcademica {
         if (edad >= 18) {
             this.edad = edad;
         } else {
-            System.out.println("❌ Edad inválida (mínimo 18)");
+            System.out.println("Edad inválida (mínimo 18)");
         }
     }
 

@@ -10,7 +10,7 @@ public class RegularConRecargo extends EstudianteRegular {
         if (recargo >= 0){
             this.recargoPendiente = recargo;
         }else{
-            System.out.println("❌ El recargo no puede ser negativo.");
+            System.out.println("El recargo no puede ser negativo.");
         }
     }
 

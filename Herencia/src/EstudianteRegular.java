@@ -11,7 +11,7 @@ public class EstudianteRegular extends Estudiante {
         if (numeroMaterias > 0) {
             this.numeroMaterias = numeroMaterias;
         } else {
-            System.out.println("❌ Debe tener al menos 1 materia.");
+            System.out.println("Debe tener al menos 1 materia.");
         }
     }
 
